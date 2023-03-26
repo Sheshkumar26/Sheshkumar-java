@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Main{
+
+    public static void main(String[] args) {
+      
+    Scanner sc=new Scanner(System.in);
+        float a=sc.nextFloat();
+        float b=sc.nextFloat();
+        float c=sc.nextFloat();
+        float d=a+b+c;
+        float e=d/3;
+        DecimalFormat df_obj = new DecimalFormat("#.#");
+        df_obj.setRoundingMode(RoundingMode.FLOOR);
+        System.out.println(df_obj.format(e));
+    }
+}
