@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sky=new Scanner(System.in);
+        
+        int x=sky.nextInt();
+        int y=sky.nextInt();
+        int n=sky.nextInt();
+        
+        
+        while(x<=y){
+            if(x%n == 0)
+                System.out.print(x+" ");
+            
+            x+=n;
+        }
+    }
+}
